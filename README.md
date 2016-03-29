@@ -1,1 +1,11 @@
-[ ![Codeship Status for youngwind/backend-boilerplate](https://codeship.com/projects/d55763e0-a2d1-0133-5ed5-5219d091b483/status?branch=master)](https://codeship.com/projects/129040)
+# 项目说明
+此项目为react培训的todolist应用提供后端接口。
+
+# 项目启动方法
+**请确保已提前安装mysql**
+
+1. git clone https://github.com/youngwind/todo-backend.git
+2. cd todo-backend & npm install
+3. cp ./common/config.example.js ./common/config.js
+4. npm run sync // 同步数据库
+5. npm run start  // 启动node服务

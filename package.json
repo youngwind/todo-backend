@@ -1,12 +1,12 @@
 {
   "name": "todo-backend",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
-    "start": "node ./app.js"
+    "start": "node ./app.js",
+    "sync": "node ./common/sync.js"
   },
   "dependencies": {
-    "bluebird": "^3.3.4",
     "body-parser": "~1.13.2",
     "co": "^4.6.0",
     "co-redis": "^2.1.0",
