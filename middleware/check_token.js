@@ -4,13 +4,7 @@
  **********************************************/
 
 var co = require('co');
-var redis = require("redis");
-var wrapper = require('co-redis');
 var is = require('is_js');
-
-var redisClient = redis.createClient();
-var redisCo = wrapper(redisClient);
-
 
 module.exports = function () {
   return function (req, res, next) {

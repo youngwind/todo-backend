@@ -8,8 +8,8 @@ router.get('/', function (req, res, next) {
   res.send('respond with a resource');
 });
 
-// 增加用户
-router.get('/addUser', function (req, res, next) {
+// 用户注册
+router.post('/register', function (req, res, next) {
   user.add(req, res, next);
 });
 
