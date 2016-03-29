@@ -22,7 +22,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(tokenRedis());
+require('./common/global');
+
 
 app.use('/', routes);
 app.use('/users', users);
@@ -60,5 +61,5 @@ app.use(function (err, req, res, next) {
 
 
 var server = app.listen(config.port, function () {
-  console.log('app start.\nListening on http://localhost:'+server.address().port);
+  console.log('app start.\nListening on http://localhost:' + server.address().port);
 });
