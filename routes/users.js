@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var is = require("is_js");
+var co = require('co');
 
 // 用户注册
 router.post('/register', function (req, res, next) {
@@ -52,13 +53,20 @@ router.post('/login', function (req, res, next) {
     if (is.empty(data)) {
       next(new Error('账号密码不正确'));
     } else {
-      res.send({
-        code: 0,
-        data: {
-          userId: data[0].dataValues.id,
-          userName: data[0].dataValues.username
-        }
-      })
+      var id = data[0].dataValues.id;
+      var name = data[0].dataValues.username;
+      co(function* () {
+        var token = new Date().getTime() + userName
+        var a = yield redisCo.set(id, token);
+        res.send({
+          code: 0,
+          data: {
+            userId: data[0].dataValues.id,
+            userName: data[0].dataValues.username,
+            token: token
+          }
+        })
+      });
     }
   })
 });

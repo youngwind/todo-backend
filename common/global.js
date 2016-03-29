@@ -4,6 +4,7 @@ var redis = require("redis");
 var wrapper = require('co-redis');
 var config = require('./config.js');
 
+
 // 创建redis
 global.redisClient = redis.createClient();
 global.redisCo = wrapper(redisClient);
