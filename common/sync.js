@@ -1,3 +1,4 @@
-//创建数据表
+require('./db');
 
 User.sync();
+Todos.sync();
