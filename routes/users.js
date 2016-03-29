@@ -56,8 +56,8 @@ router.post('/login', function (req, res, next) {
       var id = data[0].dataValues.id;
       var name = data[0].dataValues.username;
       co(function* () {
-        var token = new Date().getTime() + userName
-        var a = yield redisCo.set(id, token);
+        var token = new Date().getTime() + userName;
+        var a = yield redisCo.set(token, id);
         res.send({
           code: 0,
           data: {

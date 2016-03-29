@@ -8,11 +8,12 @@ var is = require('is_js');
 
 module.exports = function () {
   return function (req, res, next) {
-    var token = req.query.token;
+    var token = req.cookies.token;
     if (is.existy(token)) {
       co(function* () {
         var userId = yield redisCo.get(token);
         if (is.existy(userId)) {
+          req.userId = userId;
           next();
         } else {
           next(new Error('token无效'));
