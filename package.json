@@ -1,11 +1,20 @@
 {
   "name": "todo-backend",
-  "version": "0.1.1",
-  "private": true,
+  "version": "0.1.2",
+  "author": {
+    "name": "youngwind",
+    "email": "540506594@qq.com"
+  },
+  "homepage": "https://github.com/youngwind/todo-backend",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/youngwind/todo-backend.git"
+  },
   "scripts": {
     "start": "node ./app.js",
     "sync": "node ./common/sync.js"
   },
+  "license": "MIT",
   "dependencies": {
     "body-parser": "~1.13.2",
     "co": "^4.6.0",
