@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "node ./app.js",
-    "sync": "node ./common/sync.js"
+    "sync": "node ./common/sync.js",
+    "redis": "redis-server &"
   },
   "license": "MIT",
   "dependencies": {
