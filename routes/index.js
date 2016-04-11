@@ -79,5 +79,12 @@ router.get('/test/list', function (req, res, next) {
   });
 });
 
+router.put('/question', function (req, res, next) {
+  res.send({
+    code: 0,
+    data: true
+  });
+
+});
 
 module.exports = router;

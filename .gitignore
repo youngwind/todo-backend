@@ -7,3 +7,4 @@ src/scripts/config.js
 .idea
 public/
 credentials.js
+*.rdb
