@@ -53,8 +53,8 @@ router.get('/practice', function (req, res, next) {
 router.get('/test/list', function (req, res, next) {
   res.send({
     "code": 0,
-    "testId": 1,
     "data": {
+      "testId": 1,
       "questions": [
         {
           "choice": ["选项A", "选项B", "选项C", "选项D"],
@@ -64,8 +64,7 @@ router.get('/test/list', function (req, res, next) {
           "id": 1,
           "question": "这是题目",
           "type": 1
-        }
-        ,
+        },
         {
           "choice": ["pp", "le", "a"],
           "answer": "apple",
