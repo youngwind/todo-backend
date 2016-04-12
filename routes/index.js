@@ -62,17 +62,53 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 1,
+          "question": "题目1",
+          "type": 1
+        },
+        {
+          "choice": ["选项A是打飞机", "选项B深刻的减肥", "选项C是东方红", "选项DSKDJFJJKJ"],
+          "answer": 1,
+          "dimension": 1,
+          "guide": "指导语1",
+          "id": 2,
+          "question": "",
+          "type": 2
+        },
+        {
+          "choice": ["选项AFKJSDFKJ", "选项B SDJF SDF ", "选项CSDF ", "选项DSDFSF "],
+          "answer": 1,
+          "dimension": 1,
+          "guide": "指导语1",
+          "id": 3,
           "question": "这是题目",
           "type": 1
         },
         {
-          "choice": ["pp", "le", "a"],
-          "answer": "apple",
-          "dimension": 2,
-          "guide": "指导语2",
-          "id": 2,
-          "question": "题目",
-          "type": 8
+          "choice": ["选项A跨世纪的反馈", "选项B打飞机", "选项C是对方答复", "选项D阿斯蒂芬"],
+          "answer": 1,
+          "dimension": 1,
+          "guide": "指导语1",
+          "id": 4,
+          "question": "这是题目",
+          "type": 1
+        },
+        {
+          "choice": ["选项A啊啊", "选项B方法", "选项C盛世嫡妃", "选项D水电费"],
+          "answer": 1,
+          "dimension": 1,
+          "guide": "指导语1",
+          "id": 5,
+          "question": "这是题目",
+          "type": 1
+        },
+        {
+          "choice": ["选项A请问", "选项Bv", "选项C请问", "选项D是大法官"],
+          "answer": 1,
+          "dimension": 1,
+          "guide": "指导语1",
+          "id": 6,
+          "question": "这是题目",
+          "type": 1
         }
       ]
     }
@@ -85,6 +121,13 @@ router.put('/question', function (req, res, next) {
     data: true
   });
 
+});
+
+router.post('/question', function (req, res, next) {
+  res.send({
+    code: 0,
+    data: true
+  })
 });
 
 module.exports = router;
