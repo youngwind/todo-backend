@@ -13,8 +13,8 @@ router.get('/practice', function (req, res, next) {
       "totalList": 50,
       "name": "托福核心词汇",
       "status": {
-        "progress": 3,
-        "currentQuestionNum": 38
+        "progress": 1,
+        "currentQuestionNum": 1
       },
       "wordNum": 100,
       "questionNum": 300,
@@ -28,27 +28,6 @@ router.get('/practice', function (req, res, next) {
   });
 });
 
-
-router.get('/practice', function (req, res, next) {
-  res.send({
-    "data": {
-      "totalList": 50,
-      "name": "托福核心词汇",
-      "status": {
-        "progress": 3,
-        "currentQuestionNum": 38
-      },
-      "wordNum": 100,
-      "questionNum": 300,
-      "currentList": 12,
-      "setting": {
-        "studyTarget": "“1,2,3\"",
-        "pronunciation": 1
-      }
-    },
-    "code": 0
-  });
-});
 
 router.get('/test/list', function (req, res, next) {
   res.send({
