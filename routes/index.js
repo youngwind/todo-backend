@@ -39,10 +39,11 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["选项A", "选项B", "选项C", "选项D"],
           "answer": 1,
           "dimension": 1,
-          "guide": "指导语1",
+          "guide": "",
           "id": 1,
-          "question": "题目1",
-          "type": 1
+          "word":'wounded',
+          "question": "Peeta is out there in the woods, wounded badly.",
+          "type": 4
         },
         {
           "choice": ["选项A是打飞机", "选项B深刻的减肥", "选项C是东方红", "选项DSKDJFJJKJ"],
