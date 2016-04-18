@@ -59,10 +59,11 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["选项AFKJSDFKJ", "选项B SDJF SDF ", "选项CSDF ", "选项DSDFSF "],
           "answer": 1,
           "dimension": 1,
-          "guide": "指导语1",
+          "word":'fancy',
+          "guide": "In this sentence,fancy means",
           "id": 3,
-          "question": "这是题目",
-          "type": 1
+          "question": "He owne a fancy house out on Lake Agawam.",
+          "type": 3
         },
         {
           "choice": ["选项A跨世纪的反馈", "选项B打飞机", "选项C是对方答复", "选项D阿斯蒂芬"],
@@ -79,8 +80,8 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 5,
-          "question": "这是题目",
-          "type": 1
+          "question": "My wife was so embarrased when she____some of our guests say they didn't like the meal she'd cooked for them.",
+          "type": 6
         },
         {
           "choice": ["选项A请问", "选项Bv", "选项C请问", "选项D是大法官"],
