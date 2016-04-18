@@ -8,4 +8,5 @@
 2. cd todo-backend & npm install
 3. cp ./common/config.example.js ./common/config.js
 4. npm run sync // 同步数据库
-5. npm run start  // 启动node服务
+5. npm run redis
+6. npm run start  // 启动node服务

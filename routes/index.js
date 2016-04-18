@@ -39,7 +39,7 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["选项A", "选项B", "选项C", "选项D"],
           "answer": 1,
           "dimension": 1,
-          "guide": "",
+          "guide": "Wounded  is similar in meaning to ?",
           "id": 1,
           "word":'wounded',
           "question": "Peeta is out there in the woods, wounded badly.",
@@ -51,8 +51,9 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 2,
-          "question": "",
-          "type": 2
+          "word":'fortunate',
+          "question": "She was so fortunate to have avoided the shower that night",
+          "type": 5
         },
         {
           "choice": ["选项AFKJSDFKJ", "选项B SDJF SDF ", "选项CSDF ", "选项DSDFSF "],
