@@ -41,7 +41,7 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["选项A", "选项B", "选项C", "选项D"],
           "answer": 1,
           "dimension": 1,
-          "guide": "",
+          "guide": "Wounded  is similar in meaning to ?",
           "id": 1,
           "word": 'wounded',
           "question": "Peeta is out there in the woods, wounded badly.",
@@ -55,7 +55,8 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 2,
-          "question": "",
+          "word":'fortunate',
+          "question": "She was so fortunate to have avoided the shower that night",
           "type": 5
         },
 
@@ -64,10 +65,11 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["想象,幻想", "热烈鼓掌", "单词量", "信任,信赖"],
           "answer": 2,
           "dimension": 1,
-          "guide": "",
+          "word":'fancy',
+          "guide": "In this sentence,fancy means",
           "id": 3,
-          "question": "must",
-          "type": 1
+          "question": "He owne a fancy house out on Lake Agawam.",
+          "type": 3
         },
 
         {
@@ -85,8 +87,8 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 5,
-          "question": "这是题目",
-          "type": 1
+          "question": "My wife was so embarrased when she____some of our guests say they didn't like the meal she'd cooked for them.",
+          "type": 6
         },
         {
           "choice": ["选项A请问", "选项Bv", "选项C请问", "选项D是大法官"],
