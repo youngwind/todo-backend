@@ -6,6 +6,9 @@ router.get('/', function (req, res, next) {
   res.render('index', {title: 'Express'});
 });
 
+/****************************************
+ * 少峰的接口
+ ***********************************************/
 
 router.get('/practice', function (req, res, next) {
   res.send({
@@ -43,10 +46,7 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "Wounded  is similar in meaning to ?",
           "id": 1,
-<<<<<<< HEAD
           "wordId":12,
-=======
->>>>>>> a74995c47ccd8e63800e5e638b6cbe97bffbe477
           "word": 'wounded',
           "question": "Peeta is out there in the woods, wounded badly.",
           "type": 4
@@ -59,10 +59,7 @@ router.get('/test/list', function (req, res, next) {
           "dimension": 1,
           "guide": "指导语1",
           "id": 2,
-<<<<<<< HEAD
           "wordId":14,
-=======
->>>>>>> a74995c47ccd8e63800e5e638b6cbe97bffbe477
           "word": 'fortunate',
           "question": "She was so fortunate to have avoided the shower that night",
           "type": 5
@@ -73,10 +70,7 @@ router.get('/test/list', function (req, res, next) {
           "choice": ["想象,幻想", "热烈鼓掌", "单词量", "信任,信赖"],
           "answer": 2,
           "dimension": 1,
-<<<<<<< HEAD
           "wordId":16,
-=======
->>>>>>> a74995c47ccd8e63800e5e638b6cbe97bffbe477
           "word": 'fancy',
           "guide": "In this sentence,fancy means",
           "id": 3,
@@ -119,21 +113,6 @@ router.get('/test/list', function (req, res, next) {
   });
 });
 
-router.put('/question', function (req, res, next) {
-  res.send({
-    code: 0,
-    data: true
-  });
-
-});
-
-router.post('/question', function (req, res, next) {
-  res.send({
-    code: 0,
-    data: true
-  })
-});
-
 router.get('/report', function (req, res, next) {
   res.send({
     code: 0,
@@ -168,6 +147,53 @@ router.get('/report', function (req, res, next) {
     }
   })
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************************
+ * 闪闪的接口
+ **************************************/
+router.put('/question', function (req, res, next) {
+  res.send({
+    code: 0,
+    data: true
+  });
+
+});
+
+router.post('/question', function (req, res, next) {
+  res.send({
+    code: 0,
+    data: true
+  })
+});
+
+
 
 router.get('/word', function (req, res, next) {
   var  wordId = req.query.id;
