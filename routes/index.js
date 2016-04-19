@@ -35,16 +35,20 @@ router.get('/test/list', function (req, res, next) {
     "data": {
       "testId": 1,
       "questions": [
+
+        // 近义词题
         {
           "choice": ["选项A", "选项B", "选项C", "选项D"],
           "answer": 1,
           "dimension": 1,
           "guide": "",
           "id": 1,
-          "word":'wounded',
+          "word": 'wounded',
           "question": "Peeta is out there in the woods, wounded badly.",
           "type": 4
         },
+
+        // 反义词题
         {
           "choice": ["选项A是打飞机", "选项B深刻的减肥", "选项C是东方红", "选项DSKDJFJJKJ"],
           "answer": 1,
@@ -52,17 +56,20 @@ router.get('/test/list', function (req, res, next) {
           "guide": "指导语1",
           "id": 2,
           "question": "",
-          "type": 2
+          "type": 5
         },
+
+        // 中文释义题
         {
-          "choice": ["选项AFKJSDFKJ", "选项B SDJF SDF ", "选项CSDF ", "选项DSDFSF "],
-          "answer": 1,
+          "choice": ["想象,幻想", "热烈鼓掌", "单词量", "信任,信赖"],
+          "answer": 2,
           "dimension": 1,
-          "guide": "指导语1",
+          "guide": "",
           "id": 3,
-          "question": "这是题目",
+          "question": "must",
           "type": 1
         },
+
         {
           "choice": ["选项A跨世纪的反馈", "选项B打飞机", "选项C是对方答复", "选项D阿斯蒂芬"],
           "answer": 1,
@@ -108,6 +115,43 @@ router.post('/question', function (req, res, next) {
     code: 0,
     data: true
   })
+});
+
+router.get('/report', function (req, res, next) {
+  res.send({
+    code: 0,
+    data: {
+      name: "托福口语",
+      listNum: 38,
+      wordList: {
+        1: "apple",
+        2: "must",
+        3: "appluse"
+      },
+      report: [
+        {
+          accuracy: {
+            average: "90%",
+            explain: "80%",
+            translate: "60%",
+            listen: "60%",
+            write: "60%"
+          },
+          wrongWord: [1]
+        },
+        {
+          accuracy: {
+            average: "90%",
+            explain: "80%",
+            translate: "60%",
+            listen: "60%",
+            write: "60%"
+          },
+          wrongWord: [2, 3]
+        }
+      ]
+    }
+  });
 });
 
 module.exports = router;
