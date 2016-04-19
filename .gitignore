@@ -8,3 +8,4 @@ src/scripts/config.js
 public/
 credentials.js
 *.rdb
+.DS_Store

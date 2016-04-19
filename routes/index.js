@@ -112,4 +112,42 @@ router.post('/question', function (req, res, next) {
   })
 });
 
+router.get('/word', function (req, res, next) {
+  res.send({
+    "code": 0,
+    "data": {
+      word:[
+        {
+          "name": "wounded",
+          "symbol": "[ˈfænsi]",
+          "explanation":[1,2,3],
+          "description":"Fancy can be an adjective, noun, or a verb. As an adjective, it’s the opposite of plain. The noun names something that isn’t real. When someone likes or wants something, the verb can be used: “I fancy a cup of tea.” Doesn’t that sound fancy?",
+          "id":1
+        },
+        {
+          "name": "fortunate",
+          "symbol": "[ˈfænsi]",
+          "explanation":['v.   想像； 设想； 想要； 猜想','n.  设想； 想像力； 爱好； 怪想','adj.  奇特的； 昂贵的； 高价的'],
+          "description":"Fancy can be an adjective, noun, or a verb. As an adjective, it’s the opposite of plain. The noun names something that isn’t real. When someone likes or wants something, the verb can be used: “I fancy a cup of tea.” Doesn’t that sound fancy?",
+          "id":2
+        },
+        {
+          "name": "fancy",
+          "symbol": "[ˈfænsi]",
+          "explanation":['v.   想像； 设想； 想要； 猜想','n.  设想； 想像力； 爱好； 怪想','adj.  奇特的； 昂贵的； 高价的'],
+          "description":"Fancy can be an adjective, noun, or a verb. As an adjective, it’s the opposite of plain. The noun names something that isn’t real. When someone likes or wants something, the verb can be used: “I fancy a cup of tea.” Doesn’t that sound fancy?",
+          "id":3
+        },
+        {
+          "name":"fancy",
+          "symbol": "[ˈfænsi]",
+          "explanation":['v.   想像； 设想； 想要； 猜想','n.  设想； 想像力； 爱好； 怪想','adj.  奇特的； 昂贵的； 高价的'],
+          "description":"Fancy can be an adjective, noun, or a verb. As an adjective, it’s the opposite of plain. The noun names something that isn’t real. When someone likes or wants something, the verb can be used: “I fancy a cup of tea.” Doesn’t that sound fancy?",
+          "id":4
+        }
+      ],
+    }
+  });
+});
+
 module.exports = router;
