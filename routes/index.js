@@ -130,28 +130,26 @@ router.get('/report', function (req, res, next) {
         2: "must",
         3: "appluse"
       },
-      report: [
-        {
+      report: {
+        1: {
           accuracy: {
-            average: "90%",
-            explain: "80%",
-            translate: "60%",
-            listen: "60%",
-            write: "60%"
+            average: "90",
+            explain: "80",
+            listen: "60",
+            write: "60"
           },
           wrongWord: [1]
         },
-        {
+        2: {
           accuracy: {
-            average: "90%",
-            explain: "80%",
-            translate: "60%",
-            listen: "60%",
-            write: "60%"
+            average: "20",
+            explain: "20",
+            listen: "40",
+            write: "30"
           },
           wrongWord: [2, 3]
         }
-      ]
+      }
     }
   })
 });
