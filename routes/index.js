@@ -107,6 +107,19 @@ router.get('/test/list', function (req, res, next) {
           "id": 6,
           "question": "这是题目",
           "type": 1
+        },
+        {
+          "choice": ["http://media8.smartstudy.com/media/pic/product/3320237cbb5611e5a85d00163e0053c21452841460695632.jpg",
+            "http://media8.smartstudy.com/media/pic/product/3320237cbb5611e5a85d00163e0053c21452841460695632.jpg",
+            "http://media8.smartstudy.com/media/pic/product/3320237cbb5611e5a85d00163e0053c21452841460695632.jpg",
+            "http://media8.smartstudy.com/media/pic/product/3320237cbb5611e5a85d00163e0053c21452841460695632.jpg"],
+          "answer": 1,
+          "dimension": 1,
+          "wordId":33,
+          "guide": "指导语1",
+          "id": 7,
+          "question": "这是题目",
+          "type": 2
         }
       ]
     }
