@@ -129,8 +129,7 @@ router.get('/report', function (req, res, next) {
           accuracy: {
             average: "90",
             explain: "80",
-            listen: "60",
-            write: "60"
+            listen: "60"
           },
           wrongWord: [1]
         },

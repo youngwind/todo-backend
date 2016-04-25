@@ -31,6 +31,7 @@
     "mysql": "^2.10.2",
     "redis": "^2.5.3",
     "sequelize": "^3.19.3",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "sleep": "^3.0.1"
   }
 }
