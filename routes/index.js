@@ -119,8 +119,38 @@ router.get('/test/list', function (req, res, next) {
           "wordId": 33,
           "guide": "指导语1",
           "id": 7,
-          "question": "这是题目",
+          "question": "applause",
           "type": 2
+        },
+        {
+          "choice": ["选项A请问", "选项Bv", "选项C请问", "选项D是大法官"],
+          "answer": 1,
+          "dimension": 1,
+          "wordId":22,
+          "guide": "指导语1",
+          "id": 8,
+          "question": "applause",
+          "type": 7
+        },
+        {
+          "choice": ["app", "se", "lau"],
+          "answer": 'appselau',
+          "dimension": 1,
+          "wordId":66,
+          "guide": "指导语1",
+          "id": 9,
+          "question": "v.热烈鼓掌",
+          "type": 8
+        },
+        {
+          "choice": ["map", "bak", "lau","wan","ab","kio"],
+          "answer": 'mapbaklauwanabkio',
+          "dimension": 1,
+          "wordId":88,
+          "guide": "指导语1",
+          "id": 10,
+          "question": "v.热烈鼓掌",
+          "type": 8
         }
       ]
     }
